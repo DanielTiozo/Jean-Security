@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vh;
+    background: radial-gradient(circle, rgba(9,9,121,0.059243680382309205) 47%, #054463 84%);
+}
+
+a{
+    text-decoration: none;
+    margin: 16px;
+    color: #fff;
+    background-color: #99CC00;
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+
+a:hover{
+    opacity: .7;
+}
+
+a:active{
+    opacity: .4;
+}
+
+header{
+    background-color: #0066CC;
+    width: 100vw;
+    height: 10vh;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    margin: 20px 40px 20px;
+    color: #111111;
+}
+
+.residence{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    opacity: .4;
+}
+
+.whatsapp{
+    margin: 20px 40px 20px;
+    background-color: #ffffff00;
+}
+
+.whatsapp:hover{
+    height: 55px;
+}
+
+.whatsapp:active{
+    opacity: .7;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#apresentation{
+    width: 100vw;
+    padding: 20px 40px;
+    margin-left: 0;
+}
+
+.cam, .alarm, .gate{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 20px;
+    border: 4px double #0066CC;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.alarm-img, .gate-img{
+    height: 478px;
+    width: 700px;
+}
+
+.cam-info, .alarm-info, .gate-info{
+    margin: 20% 60px 20% 60px;
+    width: 80%;
+}
+
+@media (max-width: 800px) {
+    body{
+        width: 100vw;
+    }
+
+    a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }    
+
+    header{
+        height: 60vw;
+    }
+
+    p{
+        width: 80%;
+    }
+
+    .whatsapp{
+        height: 50px;
+        width: 100px;
+    }
+
+    #apresentation{
+        margin-left: 0;
+    }
+
+    .cam, .alarm, .gate{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 4px double #0066CC;
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+    .alarm{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .cam-img, .alarm-img, .gate-img{
+        height: 238px;
+        width: 350px;
+    }
+    
+    .cam-info, .alarm-info, .gate-info{
+        width: 80%;
+        margin-left: 0;
+    }
+}
